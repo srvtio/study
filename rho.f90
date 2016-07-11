@@ -16,7 +16,8 @@ program rhoprogram
   real(8), parameter :: rho0 = 1.0d0 
   real(8), parameter :: pi = 4.0d0 * atan(1.0d0)
   real(8), parameter :: c = rho0*sqrt(t0)/(pi**1.5d0)
-  
+
+!--- ファイルの出力 ---  
   open(10,file="rho.dat")
 
   do j=1,n2
